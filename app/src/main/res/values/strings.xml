@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MateriApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_material">
+        At Google we say, “Focus on the user and all else will follow.”
+        We embrace that principle in our design by seeking to build experiences that surprise
+        and enlighten our users in equal measure. This site is for exploring how we go about it.
+        You can read our design guidelines, download assets and resources, meet our team,
+        and learn about job and training opportunities.
+    </string>
+    <string name="about_material_next">
+       We challenged ourselves to create a visual language for our users that synthesizes
+        the classic principles of good design with the innovation and possibility of technology
+        and science.This is material design. This spec is a living document that will be updated
+        as we continue to develop the tenets and specifics of material design.
+    </string>
+
+</resources>
