@@ -35,7 +35,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/about_material"
+            android:text="@string/about_material_next"
             android:padding="8dp"
             android:gravity="left"
             android:textSize="16dp"

@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import mx.gdgipn.app.myapplication.R;
 
@@ -13,6 +16,8 @@ import mx.gdgipn.app.myapplication.R;
  * Created by thespianartist on 7/6/14.
  */
 public class SecondFragment extends Fragment {
+
+    ImageButton btn;
 
     public  SecondFragment(){
 
@@ -25,6 +30,15 @@ public class SecondFragment extends Fragment {
         Outline outline = new Outline();
         outline.setOval(0, 0, size, size);
         getActivity().findViewById(R.id.fab_2).setOutline(outline);
+
+        btn = (ImageButton) getActivity().findViewById(R.id.fab_2);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(),"Soy una Notificación",Toast.LENGTH_LONG).show();
+            }
+        });
+
 
     }
 
