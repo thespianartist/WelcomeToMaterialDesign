@@ -6,8 +6,10 @@ import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.graphics.Outline;
 import android.os.Bundle;
+import android.transition.Explode;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 
 import mx.gdgipn.app.myapplication.Fragments.FirstFragment;
 import mx.gdgipn.app.myapplication.Fragments.SecondFragment;
@@ -25,6 +27,8 @@ public class MyActivity extends Activity implements ActionBar.TabListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
+
+
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new FirstFragment())
@@ -37,6 +41,7 @@ public class MyActivity extends Activity implements ActionBar.TabListener{
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         bar.addTab(bar.newTab().setText("Uno").setTabListener(this));
         bar.addTab(bar.newTab().setText("Dos").setTabListener(this));
+
     }
 
 

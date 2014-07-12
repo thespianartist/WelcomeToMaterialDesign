@@ -3,9 +3,12 @@ package mx.gdgipn.app.myapplication.Fragments;
 import android.app.Fragment;
 import android.graphics.Outline;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -19,6 +22,7 @@ public class SecondFragment extends Fragment {
 
     ImageButton btn;
 
+
     public  SecondFragment(){
 
     }
@@ -26,6 +30,7 @@ public class SecondFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         int size = getResources().getDimensionPixelSize(R.dimen.fab_size);
         Outline outline = new Outline();
         outline.setOval(0, 0, size, size);
